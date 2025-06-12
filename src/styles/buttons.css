@@ -6,8 +6,8 @@ button {
 }
 
 .redirect-edit__button {
-  border: 1px solid var(--gray600);
-  background-color: var(--gray900);
+  border: 1px solid var(--gray500);
+  background-color: var(--gray600);
   color: var(--gray100);
 }
 

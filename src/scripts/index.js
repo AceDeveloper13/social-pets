@@ -1,1 +1,6 @@
-/* Desenvolva seu código aqui */
+const body = document.querySelector('body')
+
+
+
+
+
