@@ -20,14 +20,14 @@
             <img src="./src/img/Brahma2.jpg" alt="" class="imgsPet">
         </div>
         <div class="divLoginRegister">
-            <button class="confirm__button">Login</button>
+            <button class="confirm__button firstLoginButton">Login</button>
             <button class="redirect-edit__button">Register</button>
         </div>
     </main>
 
-    <div class="loginModal">
+    <div class="loginModal genericModal hidden">
         <form class="formLogin">
-            
+
             <h2 class="titleLogin">Login</h2>
 
             <div class="divLogin">
@@ -45,7 +45,18 @@
                 <p>By clicking the button below, you can quickly    register</p>
 
                 <button class="redirect-edit__button">Register</button>
+                <p id="orText">Or</p>
+                <button type="button" class="returnHome redirect-edit__button">Return Home</button>
             </div>
+
+            
+        </form>
+    </div>
+
+    <div class="registerModal genericModal">
+        <form>
+            <label for="user">User</label>
+            <input type="text" name="user" id="user" placeholder="Enter your username here">
         </form>
     </div>
 </body>
