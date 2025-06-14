@@ -1,14 +1,27 @@
 const body = document.querySelector('body')
-const firstLoginButton = document.querySelector('.firstLoginButton')
 const loginModal = document.querySelector('.loginModal')
-const buttonReturn = document.querySelector('.returnHome')
+const registerModal = document.querySelector('.registerModal')
+const firstLoginButton = document.querySelector('.firstLoginButton')
+const registerButton = document.querySelectorAll('.registerButton')
+const returnHome = document.querySelector('.returnHome')
+const returnLogin = document.querySelector('.returnLogin')
 
 firstLoginButton.addEventListener('click', () => {
     loginModal.classList.remove('hidden')
 });
 
-buttonReturn.addEventListener('click', ()=> {
+returnHome.addEventListener('click', ()=> {
     loginModal.classList.add('hidden')
+})
+
+registerButton.forEach((button) => {
+    button.addEventListener('click', ()=> {
+        registerModal.classList.remove('hidden')
+    })
+})
+
+returnLogin.addEventListener('click', () => {
+    registerModal.classList.add('hidden')
 })
 
 

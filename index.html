@@ -21,7 +21,7 @@
         </div>
         <div class="divLoginRegister">
             <button class="confirm__button firstLoginButton">Login</button>
-            <button class="redirect-edit__button">Register</button>
+            <button class="redirect-edit__button registerButton">Register</button>
         </div>
     </main>
 
@@ -32,19 +32,19 @@
 
             <div class="divLogin">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="Enter your username here">
 
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" placeholder="Enter your password here">
 
                 <button type="submit" class="confirm__button">Login</button>
             </div>
 
             <div class="divRegister">
                 <strong>Don't have an account yet?</strong>
-                <p>By clicking the button below, you can quickly    register</p>
+                <p>By clicking the button below, you can quickly register</p>
 
-                <button class="redirect-edit__button">Register</button>
+                <button type="button" class="redirect-edit__button registerButton">Register</button>
                 <p id="orText">Or</p>
                 <button type="button" class="returnHome redirect-edit__button">Return Home</button>
             </div>
@@ -53,10 +53,21 @@
         </form>
     </div>
 
-    <div class="registerModal genericModal">
-        <form>
+    <div class="registerModal genericModal hidden">
+        <form class="formLogin">
             <label for="user">User</label>
             <input type="text" name="user" id="user" placeholder="Enter your username here">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="emal" placeholder="Enter your email here">
+
+            <label for="profilePictureLink">Profile Picture Link</label>
+            <input type="url" name="profilePictureLink" id="profilePictureLink" placeholder="Insert link here">
+
+            <label for="passwordRegister">Password</label>
+            <input type="password" name="password" id="passwordRegister" placeholder="Enter your password here">
+
+            <button type="button" class="returnLogin confirm__button">Return</button>
         </form>
     </div>
 </body>
