@@ -51,6 +51,7 @@ input{
 }
 
 form{
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 1.5rem 2.75rem;
